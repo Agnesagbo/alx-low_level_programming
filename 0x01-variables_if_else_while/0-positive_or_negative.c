@@ -3,22 +3,41 @@
 #include <time.h>
 
 /**
- *main -Entry point
+ * main -Entry point
  *
- *Return: 0 if successful
+ * Return: 0 if successful
  */
 int main(void)
-{       int n;
+{
+	int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	int L;
 
-        if (n > 0)
-                printf("% is positive\n", n);
-        else if (n == 0)
-                printf("%d is zero\n", n);
-        else
-                printf("%d is nagative\n", n);
+	char str[] = "Last digit of";
 
-        return (0)
+
+
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+	L = n % 10;
+
+
+
+	if (L > 5)
+
+		printf("%s %d is %d and is greater than 5\n", str, n, L);
+
+	else if (L == 0)
+
+		printf("%s %d is %d and is 0\n", str, n, L);
+
+	else if (L < 6)
+
+		printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
+
+
+
+	return (0);
 }
