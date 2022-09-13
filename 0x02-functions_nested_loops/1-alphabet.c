@@ -1,16 +1,13 @@
-#include "holberton.h"
-
+#include "main.h"
 
 
 /**
 
- * print_alphabet - prints alphabet
+ * main - check the code
 
  *
 
  * Return: always 0;
-
- *
 
  */
 
